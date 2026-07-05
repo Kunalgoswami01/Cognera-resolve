@@ -1,0 +1,38 @@
+export const MOCK_CASES = [
+  {
+    id: 'mock-1',
+    title: 'Unfair Billing Dispute with Comcast',
+    company_name: 'Comcast',
+    issue_category: 'telecom',
+    status: 'draft',
+    current_step: 'case_created',
+    readiness_score: 35,
+    summary: 'Charged $150 for equipment that was returned. Tracking number indicates delivery, but merchant continues to claim non-receipt.',
+    created_at: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+    updated_at: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'mock-2',
+    title: 'Double Charge on Subscription Billing',
+    company_name: 'Netflix',
+    issue_category: 'entertainment',
+    status: 'analyzing',
+    current_step: 'intake_processed',
+    readiness_score: 65,
+    summary: 'Billed twice on the same day for standard subscription ($15.49 x 2). Customer support chat refused to refund the second charge.',
+    created_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+    updated_at: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+  },
+  {
+    id: 'mock-3',
+    title: 'Broken TV Screen Delivery',
+    company_name: 'BestBuy',
+    issue_category: 'retail',
+    status: 'ready',
+    current_step: 'evidence_collected',
+    readiness_score: 95,
+    summary: 'Ordered an 85" Samsung TV. Box arrived damaged, TV screen was cracked. Uploaded pictures of box and damage.',
+    created_at: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+    updated_at: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+  }
+];
